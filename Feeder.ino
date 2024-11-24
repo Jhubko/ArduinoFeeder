@@ -19,13 +19,11 @@ void loop()
 {
   DateTime now = rtc.now();
 
-    if ((now.hour() == 07 && now.minute() == 00 && now.second() == 0)) 
+    if ((now.hour() == 07 && now.minute() == 00 && now.second() == 0) || (now.hour() == 13 && now.minute() == 00 && now.second() == 0)) || (now.hour() == 19 && now.minute() == 00 && now.second() == 0))) 
     {
       dispense();
       delay(1000);
     }
-
-  delay(500);
 }
 
 void dispense()
